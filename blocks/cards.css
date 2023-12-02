@@ -1,0 +1,27 @@
+.cards {
+  padding-top: 47.25px;
+  width: 880px;
+  height: 742px;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  row-gap: 20px;
+}
+
+.cards__element {
+  background-color: #fff;
+  border-radius: 10%;
+  height: 361px;
+  margin-right: 17px;
+  padding: 0;
+}
+
+.cards__element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 282px;
+  height: 282px;
+  border-radius: 10px 10px 0 0;
+}
