@@ -23,15 +23,49 @@
 
 .profile__name {
   margin: 0;
+  padding: 0;
+  width: 373px;
+  height: 48px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
 }
 
 .profile__description {
-  margin: 0;
+  margin: 7px 0 0;
   width: 415px;
   height: 22px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile__edit-button {
+  width: 24px;
+  height: 24px;
+  margin: 15px 0 9px 18px;
+  background: transparent url(../images/Edit-Button.svg);
+  border: 1px solid white;
+}
+
+.profile__edit-button:hover {
+  background: url(../images/Edit-Button-hover.svg);
+  border: 1px solid grey;
 }
 
 .profile__add-button {
-  margin-left: auto;
-  margin-right: 0;
+  width: 150px;
+  height: 50px;
+  margin: 38.75px 0 38.75px auto;
+  background: transparent url(../images/Add-Button.svg);
+  border: 1px solid white;
+}
+
+.profile__add-button:hover {
+  background: url(../images/Add-Button-hover.svg);
+  border: 1px solid grey;
 }
