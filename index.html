@@ -13,15 +13,15 @@
   </head>
   <body class="page">
     <div class="page__content">
-      <header class="header">
+      <header class="header page__sections">
         <img
           src="/images/Around-The-US-Vector.svg"
-          alt="logo"
+          alt="around the us logo"
           class="header__logo"
         />
       </header>
       <main class="page__main">
-        <section class="profile">
+        <section class="profile page__sections">
           <img
             src="/images/jacques-cousteau.jpg"
             alt="avatar profile"
@@ -34,68 +34,78 @@
           </div>
           <button class="profile__add-button"></button>
         </section>
-        <section class="cards">
-          <div class="cards__element">
-            <img
-              src="/images/yosemite.jpg"
-              alt="yosemite valley"
-              class="cards__image"
-            />
-            <div class="cards__info">
-              <p class="cards__title">Yosemite Valley</p>
-              <button class="cards__like-button"></button>
-            </div>
-          </div>
-          <div class="cards__element">
-            <img
-              src="/images/lake-louise.jpg"
-              alt="lake louise"
-              class="cards__image"
-            />
-            <div class="cards__info">
-              <p class="cards__title">Lake Louise</p>
-              <button class="cards__like-button"></button>
-            </div>
-          </div>
-          <div class="cards__element">
-            <img
-              src="/images/bald-mountains.jpg"
-              alt="bald mountains"
-              class="cards__image"
-            />
-            <div class="cards__info">
-              <p class="cards__title">Bald Mountains</p>
-              <button class="cards__like-button"></button>
-            </div>
-          </div>
-          <div class="cards__element">
-            <img src="/images/latemar.jpg" alt="latemar" class="cards__image" />
-            <div class="cards__info">
-              <p class="cards__title">Latemar</p>
-              <button class="cards__like-button"></button>
-            </div>
-          </div>
-          <div class="cards__element">
-            <img src="/images/vanoise.jpg" alt="vanoise" class="cards__image" />
-            <div class="cards__info">
-              <p class="cards__title">Vanoise National Park</p>
-              <button class="cards__like-button"></button>
-            </div>
-          </div>
-          <div class="cards__element">
-            <img
-              src="/images/lago.jpg"
-              alt="lago di braies"
-              class="cards__image"
-            />
-            <div class="cards__info">
-              <p class="cards__title">Lago di Braies</p>
-              <button class="cards__like-button"></button>
-            </div>
-          </div>
+        <section class="cards page__sections">
+          <ul class="cards__list">
+            <li class="cards__single">
+              <img
+                src="/images/yosemite.jpg"
+                alt="yosemite valley"
+                class="cards__image"
+              />
+              <div class="cards__info">
+                <h2 class="cards__title">Yosemite Valley</h2>
+                <button class="cards__like-button"></button>
+              </div>
+            </li>
+            <li class="cards__single">
+              <img
+                src="/images/lake-louise.jpg"
+                alt="lake louise"
+                class="cards__image"
+              />
+              <div class="cards__info">
+                <h2 class="cards__title">Lake Louise</h2>
+                <button class="cards__like-button"></button>
+              </div>
+            </li>
+            <li class="cards__single">
+              <img
+                src="/images/bald-mountains.jpg"
+                alt="bald mountains"
+                class="cards__image"
+              />
+              <div class="cards__info">
+                <h2 class="cards__title">Bald Mountains</h2>
+                <button class="cards__like-button"></button>
+              </div>
+            </li>
+            <li class="cards__single">
+              <img
+                src="/images/latemar.jpg"
+                alt="latemar"
+                class="cards__image"
+              />
+              <div class="cards__info">
+                <h2 class="cards__title">Latemar</h2>
+                <button class="cards__like-button"></button>
+              </div>
+            </li>
+            <li class="cards__single">
+              <img
+                src="/images/vanoise.jpg"
+                alt="vanoise national park"
+                class="cards__image"
+              />
+              <div class="cards__info">
+                <h2 class="cards__title">Vanoise National Park</h2>
+                <button class="cards__like-button"></button>
+              </div>
+            </li>
+            <li class="cards__single">
+              <img
+                src="/images/lago.jpg"
+                alt="lago di braies"
+                class="cards__image"
+              />
+              <div class="cards__info">
+                <h2 class="cards__title">Lago Di Braies</h2>
+                <button class="cards__like-button"></button>
+              </div>
+            </li>
+          </ul>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer page__sections">
         <p class="footer__copyright">&#169; 2022 Around The U.S.</p>
       </footer>
     </div>

@@ -1,23 +1,25 @@
-@media screen and (max-width: 320px) {
-  .page {
-    width: 100%;
-    margin: auto;
-  }
-
-  .page__content {
-    width: 100%;
-  }
-}
-
 .page {
   background-color: black;
   color: white;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  height: 1217px;
+}
+
+.page__sections {
+  max-width: 880px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
 }
 
 .page__content {
-  max-width: 880px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .page__sections {
+    max-width: 90%;
+  }
 }

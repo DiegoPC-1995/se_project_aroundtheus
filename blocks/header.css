@@ -1,18 +1,9 @@
-@media screen and (max-width: 320px) {
-  .header {
-    width: 100%;
-  }
-  .header__logo {
-    margin-left: 27px;
-    width: 126px;
-    height: 24px;
-  }
-}
-
 .header {
   display: flex;
-  padding: 45px 0 0;
+  padding: 0;
+  margin-top: 45px;
   height: 74px;
+  max-width: 880px;
   border-bottom: 1px solid grey;
 }
 
@@ -21,5 +12,5 @@
   margin: 0;
   padding: 0;
   height: 33px;
-  width: 173px;
+  max-width: 173px;
 }
