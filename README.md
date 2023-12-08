@@ -18,6 +18,8 @@ This project is made so all the elements are displayed correctly on popular scre
 
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
 
-**Link on Github**
+**Links**
 
 - [Link to Project on Github](https://diegopc-1995.github.io/se_project_aroundtheus/)
+- [Link to YouTube video explaining my project](https://youtu.be/060CW8VEbbk)
+- [Link to Twitch Stream explaining my project](https://www.twitch.tv/videos/1998213101)
