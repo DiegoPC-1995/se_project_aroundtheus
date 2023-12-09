@@ -1,5 +1,6 @@
 .footer {
   margin-top: 67px;
+  margin-bottom: 60px;
 }
 
 .footer__copyright {
@@ -8,4 +9,28 @@
   font-style: normal;
   font-weight: 400;
   margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    margin-bottom: 30px;
+  }
 }
