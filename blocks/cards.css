@@ -60,6 +60,7 @@
 
 .cards__like-button:hover {
   background: url(../images/like-button-hover.svg) center no-repeat;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {

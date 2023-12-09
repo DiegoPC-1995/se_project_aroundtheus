@@ -64,6 +64,7 @@
 .profile__edit-button:hover {
   background: url(../images/Edit-Button-hover.svg) center no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .profile__add-button {
@@ -78,6 +79,7 @@
 .profile__add-button:hover {
   background: url(../images/Add-Button-hover.svg) center no-repeat;
   border: 2px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
