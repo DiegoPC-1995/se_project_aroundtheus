@@ -6,17 +6,18 @@
 - Figma
 - Images
 
-**Intro**
+**About**
 
 This project is made so all the elements are displayed correctly on popular screen sizes. This project showcases my ability to organize and deploy a webpage to github. Additionally, it demonstrates my ability to use media queries and other code to develop a responsive webpage design.
+Using an initial planned outlined from Figma, I worked with HTML and CSS to est up multiple fonts, setting uo a page header, various page sections, and media queires to properly display a successfully designed webpage across multiple screen sizes. This included handling images, text, and overflow of elements into organized grids.
 
 **Figma**
 
 - [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
 
-**Images**
+**Technologies used**
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+I used a combination of html and css, along with multiple image formats organized throughout a properly designed folder system following BEM guidelines, all of which was coded via Visual Studio Code. This was planned from a template provided from the Figma website, linked above. Additionally, to test the code of the webpage, I used multiple elements of Developer's Tools on multiple browsers, among them Chrome and Firefox. Lastly, to upload the code, I utilized gitbash terminal and commands to push my project on GitHub's platform. I streamed and recorded a walkthrough video of my code through VSC and GitHub. Links to my github webpage and videos are provided below.
 
 **Links**
 

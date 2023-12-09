@@ -35,10 +35,10 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
 }
 
 .cards__title {
-  height: 29px;
   font-family: "Inter", Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -60,7 +60,6 @@
 
 .cards__like-button:hover {
   background: url(../images/like-button-hover.svg) center no-repeat;
-  border: none;
 }
 
 @media screen and (max-width: 480px) {
