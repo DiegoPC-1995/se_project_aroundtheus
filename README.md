@@ -11,9 +11,9 @@
 This project is made so all the elements are displayed correctly on popular screen sizes. This project showcases my ability to organize and deploy a webpage to github. Additionally, it demonstrates my ability to use media queries and other code to develop a responsive webpage design.
 Using an initial planned outlined from Figma, I worked with HTML and CSS to est up multiple fonts, setting uo a page header, various page sections, and media queires to properly display a successfully designed webpage across multiple screen sizes. This included handling images, text, and overflow of elements into organized grids.
 
-**Figma**
+**Around the US Webpage**
 
-- [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
+- [Link to my Webpage Project on Github](https://diegopc-1995.github.io/se_project_aroundtheus/)
 
 **Technologies used**
 
@@ -21,6 +21,6 @@ I used a combination of html and css, along with multiple image formats organize
 
 **Links**
 
-- [Link to Project on Github](https://diegopc-1995.github.io/se_project_aroundtheus/)
+- [Link to the project's template on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
 - [Link to YouTube video explaining my project](https://youtu.be/060CW8VEbbk)
 - [Link to Twitch Stream explaining my project](https://www.twitch.tv/videos/1998213101)
