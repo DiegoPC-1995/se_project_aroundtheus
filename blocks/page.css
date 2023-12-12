@@ -24,18 +24,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .page__sections {
-    max-width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .page__sections {
-    max-width: 90%;
-  }
-}
-
 @media screen and (max-width: 320px) {
   .page__sections {
     max-width: 95%;

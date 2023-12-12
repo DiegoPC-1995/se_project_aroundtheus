@@ -77,7 +77,7 @@
 }
 
 .profile__add-button:hover {
-  background: url(../images/Add-Button.svg) center no-repeat;
+  background: url(../images/Add-Button-Hover.svg) center no-repeat;
   border: 2px solid rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
@@ -118,7 +118,7 @@
 
   .profile__add-button {
     margin: 0;
-    width: calc(100% - 5.84px);
+    width: 75%;
   }
 }
 
@@ -149,5 +149,10 @@
 
   .profile__description {
     font-size: 14px;
+  }
+
+  .profile__add-button {
+    width: 282px;
+    padding: 0;
   }
 }
