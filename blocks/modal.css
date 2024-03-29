@@ -1,0 +1,135 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  color: #000;
+  padding: 0 19px;
+  display: none;
+}
+
+.modal_open {
+  display: flex;
+}
+
+.modal_container {
+  background-color: white;
+  margin: 195px auto;
+  padding: 35px;
+  border-radius: 10px;
+  max-width: 430px;
+  height: 330px;
+  position: relative;
+}
+
+.modal_close {
+  border: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
+  background-color: transparent;
+  background-image: url(../images/Close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.modal_heading {
+  width: 330px;
+  height: 23px;
+  margin: 0;
+  padding: 0 0 54px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 29.05px;
+}
+
+.modal_form {
+  margin: 0;
+  max-width: 358px;
+}
+
+.modal_input {
+  width: 100%;
+  padding-bottom: 13.34px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #000;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-width: 1px;
+}
+
+.modal_input:last-of-type {
+  margin-top: 29.74px;
+}
+
+.modal_button {
+  cursor: pointer;
+  margin-top: 48px;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+  height: 50.15px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.75px;
+  border: none;
+  border-radius: 2px;
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+  .modal_container {
+    margin-top: 123px;
+    max-width: 282px;
+    height: 322px;
+    padding: 24px;
+  }
+
+  .modal_close {
+    width: 26px;
+    height: 26px;
+    bottom: calc(100% + 13.62px);
+    left: calc(100% - 27px);
+  }
+
+  .modal_heading {
+    max-width: 238px;
+    font-size: 18px;
+    line-height: 21.78px;
+  }
+
+  .modal_form {
+    max-width: 238px;
+  }
+
+  .modal_button {
+    max-width: 238px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .modal {
+    padding: 10px;
+  }
+
+  .modal_container {
+    margin-top: 112.5px;
+  }
+}
