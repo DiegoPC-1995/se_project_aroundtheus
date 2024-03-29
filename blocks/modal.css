@@ -1,4 +1,4 @@
-.modals {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,11 +12,11 @@
   display: none;
 }
 
-.modal_open {
+.modal__open {
   display: flex;
 }
 
-.modal_container {
+.modal__container {
   background-color: white;
   margin: 195px auto;
   padding: 35px;
@@ -26,7 +26,7 @@
   position: relative;
 }
 
-.modal_close {
+.modal__close {
   border: none;
   width: 40px;
   height: 40px;
@@ -40,7 +40,7 @@
   cursor: pointer;
 }
 
-.modal_heading {
+.modal__heading {
   width: 330px;
   height: 23px;
   margin: 0;
@@ -52,12 +52,12 @@
   line-height: 29.05px;
 }
 
-.modal_form {
+.modal__form {
   margin: 0;
   max-width: 358px;
 }
 
-.modal_input {
+.modal__input {
   width: 100%;
   padding-bottom: 13.34px;
   font-family: "Inter", Arial, sans-serif;
@@ -72,11 +72,11 @@
   border-width: 1px;
 }
 
-.modal_input:last-of-type {
+.modal__input:last-of-type {
   margin-top: 29.74px;
 }
 
-.modal_button {
+.modal__button {
   cursor: pointer;
   margin-top: 48px;
   margin-bottom: 0;
@@ -95,41 +95,41 @@
 }
 
 @media screen and (max-width: 550px) {
-  .modal_container {
+  .modal__container {
     margin-top: 123px;
     max-width: 282px;
     height: 322px;
     padding: 24px;
   }
 
-  .modal_close {
+  .modal__close {
     width: 26px;
     height: 26px;
     bottom: calc(100% + 13.62px);
     left: calc(100% - 27px);
   }
 
-  .modal_heading {
+  .modal__heading {
     max-width: 238px;
     font-size: 18px;
     line-height: 21.78px;
   }
 
-  .modal_form {
+  .modal__form {
     max-width: 238px;
   }
 
-  .modal_button {
+  .modal__button {
     max-width: 238px;
   }
 }
 
 @media screen and (max-width: 330px) {
-  .modals {
+  .modal {
     padding: 10px;
   }
 
-  .modal_container {
+  .modal__container {
     margin-top: 112.5px;
   }
 }
