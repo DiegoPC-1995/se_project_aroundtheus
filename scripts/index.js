@@ -26,18 +26,23 @@ const initialCards = [
 ];
 
 /* Elements */
-const profileEditButton = document.querySelector("#profile-edit-button");
+// Wrappers
 const profileEditModal = document.querySelector("#profile-edit-modal");
+const profileEditForm = profileEditModal.querySelector(".modal__form");
+const addCardModal = document.querySelector("#add-card-modal");
+// Buttons and other  DOM nodes
+const profileEditButton = document.querySelector("#profile-edit-button");
+const addCardModalCloseButton = addCardModal.querySelector(".modal__close");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
 const profileTitleInput = document.querySelector("#profile-title-input");
 const profileDescriptionInput = document.querySelector(
   "#profile-description-input"
 );
-const profileEditForm = profileEditModal.querySelector(".modal__form");
 const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
+const addNewCardButton = document.querySelector(".profile__add-button");
 
 /* Functions */
 function closePopup() {
@@ -52,6 +57,13 @@ function getCardElement(cardData) {
   cardImageEl.setAttribute("alt", cardData.name);
   cardTitleEl.textContent = cardData.name;
   return cardElement;
+}
+// testing addCardModal
+function openModal(modal) {
+  modal.classList.add("modal_open");
+}
+function closeModal(modal) {
+  modal.classList.remove("modal_open");
 }
 
 /* Event Handlers */
@@ -70,7 +82,6 @@ profileEditButton.addEventListener("click", () => {
 });
 
 const profileCloseButton = document.querySelector("#profile-close-button");
-
 profileCloseButton.addEventListener("click", closePopup);
 
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
@@ -79,3 +90,8 @@ initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);
   cardListEl.prepend(cardElement);
 });
+// add new card
+addNewCardButton.addEventListener("click", () => openModal(addCardModal));
+addCardModalCloseButton.addEventListener("click", () =>
+  closeModal(addCardModal)
+);
