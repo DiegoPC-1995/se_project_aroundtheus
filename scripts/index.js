@@ -30,6 +30,7 @@ const initialCards = [
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 const addCardModal = document.querySelector("#add-card-modal");
+const addCardFormElement = addCardModal.querySelector(".modal__form");
 // Buttons and other  DOM nodes
 const profileEditButton = document.querySelector("#profile-edit-button");
 const addCardModalCloseButton = addCardModal.querySelector(".modal__close");
@@ -66,12 +67,30 @@ function closeModal(modal) {
   modal.classList.remove("modal_open");
 }
 
+function renderCard(cardData, wrapper) {
+  const cardElement = getCardElement(cardData);
+  wrapper.prepend(cardElement);
+}
+
+const cardTitleInput = addCardFormElement.querySelector(
+  ".modal__input_type_title"
+);
+const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
+
 /* Event Handlers */
 function handleProfileEditSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
   closePopup();
+}
+
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+  const name = cardTitleInput.value;
+  const link = cardUrlInput.value;
+  renderCard({ name, link }, cardListEl);
+  closeModal(addCardModal);
 }
 
 /* Event Listeners */
@@ -85,11 +104,14 @@ const profileCloseButton = document.querySelector("#profile-close-button");
 profileCloseButton.addEventListener("click", closePopup);
 
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
+addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 
-initialCards.forEach((cardData) => {
+/* initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);
   cardListEl.prepend(cardElement);
-});
+}); */
+initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
+
 // add new card
 addNewCardButton.addEventListener("click", () => openModal(addCardModal));
 addCardModalCloseButton.addEventListener("click", () =>
