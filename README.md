@@ -22,5 +22,6 @@ I used a combination of html and css, along with multiple image formats organize
 **Links**
 
 - [Link to the project's template on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
+-     [Updated Link, 2025](https://www.figma.com/design/JFPhASqvZ5pBjQV2ouUlim/Sprint-5_-Around-The-U.S.-_-desktop-%2B-mobile-(Copy))
 - [Link to YouTube video explaining my project](https://youtu.be/060CW8VEbbk)
 - [Link to Twitch Stream explaining my project](https://www.twitch.tv/videos/1998213101)
