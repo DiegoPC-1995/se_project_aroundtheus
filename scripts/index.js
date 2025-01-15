@@ -56,6 +56,7 @@ function getCardElement(cardData) {
   const cardTitleEl = cardElement.querySelector(".cards__title");
   const likeButton = cardElement.querySelector(".cards__like-button");
   // find delete button
+  const trashButton = cardElement.querySelector(".cards__trash-button");
 
   // add event listener to delete
   // card.Element.remove();
