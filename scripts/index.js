@@ -59,7 +59,9 @@ function getCardElement(cardData) {
   const trashButton = cardElement.querySelector(".cards__trash-button");
 
   // add event listener to delete
-  // card.Element.remove();
+  trashButton.addEventListener("click", () => {
+    cardElement.remove();
+  });
 
   // add click listener to the cardImageEl element
   // openModal with previewImageModal
