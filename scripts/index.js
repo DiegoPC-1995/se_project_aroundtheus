@@ -92,7 +92,8 @@ function getCardElement(cardData) {
   cardTitleEl.textContent = cardData.name;
 
   return cardElement;
-}
+} /* *** Close the getCardElement, which has all the cardData, 
+to keep its dynamic functions responsive within */
 
 // addCardModal
 function openModal(modal) {
