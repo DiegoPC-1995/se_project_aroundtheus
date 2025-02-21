@@ -70,12 +70,14 @@ function getCardElement(cardData) {
   // add click listener to the cardImageEl element
   // openModal with previewImageModal
   const previewModal = document.querySelector("#open-image-modal");
-  // find preview modal image element
+  // find previewImageModal element
   const largeImage = previewModal.querySelector(".large-image");
   cardImageEl.addEventListener("click", () => {
     // change src to cardData.link
     largeImage.src = cardData.link;
     openModal(previewModal);
+
+    //close previewImageModal
   });
 
   cardImageEl.src = cardData.link;

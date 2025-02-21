@@ -26,6 +26,19 @@
   position: relative;
 }
 
+.preview__container {
+  margin: 90px auto;
+  width: auto;
+  max-height: 540px;
+  position: relative;
+}
+
+.large-image {
+  width: auto;
+  max-height: 540px;
+  position: relative;
+}
+
 .modal__close {
   border: none;
   width: 40px;
