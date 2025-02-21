@@ -71,8 +71,10 @@ function getCardElement(cardData) {
   // openModal with previewImageModal
   const previewModal = document.querySelector("#open-image-modal");
   // find preview modal image element
+  const largeImage = previewModal.querySelector(".large-image");
   cardImageEl.addEventListener("click", () => {
     // change src to cardData.link
+    largeImage.src = cardData.link;
     openModal(previewModal);
   });
 
@@ -141,4 +143,3 @@ addNewCardButton.addEventListener("click", () => openModal(addCardModal));
 addCardModalCloseButton.addEventListener("click", () =>
   closeModal(addCardModal)
 );
-console.log("run");
