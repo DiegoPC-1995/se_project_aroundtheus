@@ -67,6 +67,15 @@ function getCardElement(cardData) {
     likeButton.classList.toggle("cards__like-button_active");
   });
 
+  // add click listener to the cardImageEl element
+  // openModal with previewImageModal
+  const previewModal = document.querySelector("#open-image-modal");
+  // find preview modal image element
+  cardImageEl.addEventListener("click", () => {
+    // change src to cardData.link
+    openModal(previewModal);
+  });
+
   cardImageEl.src = cardData.link;
   cardImageEl.setAttribute("alt", cardData.name);
   cardTitleEl.textContent = cardData.name;
@@ -132,9 +141,4 @@ addNewCardButton.addEventListener("click", () => openModal(addCardModal));
 addCardModalCloseButton.addEventListener("click", () =>
   closeModal(addCardModal)
 );
-
-// add click listener to the cardImageEl element
-// openModal with previewImageModal
-const previewModal = document.querySelector("#open-image-modal");
-const previewImage = document.querySelector(".preview__image");
-previewImage.addEventListener("click", () => openModal(previewModal));
+console.log("run");
