@@ -30,6 +30,8 @@ const initialCards = [
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 const addCardModal = document.querySelector("#add-card-modal");
+// more efficient way of accessing forms below. since code wasn't setup for it, the old code is still below at ln 35
+// const addCardFormElement = addCardModal.forms["add-card-form"];
 const addCardFormElement = addCardModal.querySelector(".modal__form");
 // Buttons and other  DOM nodes
 const profileEditButton = document.querySelector("#profile-edit-button");
@@ -44,10 +46,23 @@ const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
 const addNewCardButton = document.querySelector(".profile__add-button");
+// find previewImageModal element
+const previewModal = document.querySelector("#open-image-modal");
+// find the element I want to have its src changed
+const largeImage = previewModal.querySelector(".large-image");
+// find the large-text element
+const largeText = previewModal.querySelector(".large-text");
 
 /* Functions */
+function openModal(modal) {
+  modal.classList.add("modal_open");
+}
+function closeModal(modal) {
+  modal.classList.remove("modal_open");
+}
+
 function closePopup() {
-  profileEditModal.classList.remove("modal_open");
+  closeModal(profileEditModal);
 }
 
 function getCardElement(cardData) {
@@ -67,16 +82,12 @@ function getCardElement(cardData) {
     likeButton.classList.toggle("cards__like-button_active");
   });
 
-  // find previewImageModal element
-  const previewModal = document.querySelector("#open-image-modal");
-  // find the element I want to have its src changed
-  const largeImage = previewModal.querySelector(".large-image");
-  // find the large-text element
-  const largeText = previewModal.querySelector(".large-text");
   // add click listener to the cardImageEl element, with elements added inside forEach loop
   cardImageEl.addEventListener("click", () => {
     // change src to cardData.link
     largeImage.src = cardData.link;
+    // change alt to cardData.name
+    largeImage.setAttribute("alt", cardData.name);
     // change large-text to cards_title
     largeText.textContent = cardData.name;
     // openModal with previewImageModal
@@ -85,7 +96,7 @@ function getCardElement(cardData) {
 
   // define a function in order to close previewImageModal
   function closePreview() {
-    previewModal.classList.remove("modal_open");
+    closeModal(previewModal);
   }
   // find the button to close previewImageModal
   const previewCloseButton = document.querySelector("#preview-close-button");
@@ -101,13 +112,6 @@ function getCardElement(cardData) {
 to keep its dynamic functions responsive within */
 
 // addCardModal
-function openModal(modal) {
-  modal.classList.add("modal_open");
-}
-function closeModal(modal) {
-  modal.classList.remove("modal_open");
-}
-
 function renderCard(cardData, wrapper) {
   const cardElement = getCardElement(cardData);
   wrapper.prepend(cardElement);
@@ -138,7 +142,7 @@ function handleAddCardSubmit(evt) {
 profileEditButton.addEventListener("click", () => {
   profileTitleInput.value = profileName.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
-  profileEditModal.classList.add("modal_open");
+  openModal(profileEditModal);
 });
 
 const profileCloseButton = document.querySelector("#profile-close-button");
