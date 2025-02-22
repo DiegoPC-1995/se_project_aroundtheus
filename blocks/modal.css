@@ -197,4 +197,20 @@
   .modal__container {
     margin-top: 112.5px;
   }
+
+  .modal__heading {
+    width: 238px;
+    height: 22px;
+    margin: 0;
+    padding: 0 0 54px;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 21.78px;
+  }
+
+  .modal__button {
+    font-size: 14px;
+  }
 }
