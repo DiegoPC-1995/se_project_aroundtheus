@@ -45,7 +45,7 @@
   position: relative;
 }
 
-.preview__container {
+.modal__preview-container {
   margin: 90px auto;
   max-width: 66.613%;
   max-height: 540px;
@@ -175,7 +175,7 @@
     height: 50px;
   }
 
-  .preview__container {
+  .modal__preview-container {
     margin: 90px auto;
     max-width: 75%;
     max-height: 540px;
