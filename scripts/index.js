@@ -69,11 +69,16 @@ function getCardElement(cardData) {
 
   // find previewImageModal element
   const previewModal = document.querySelector("#open-image-modal");
+  // find the element I want to have its src changed
   const largeImage = previewModal.querySelector(".large-image");
+  // find the large-text element
+  const largeText = previewModal.querySelector(".large-text");
   // add click listener to the cardImageEl element, with elements added inside forEach loop
   cardImageEl.addEventListener("click", () => {
     // change src to cardData.link
     largeImage.src = cardData.link;
+    // change large-text to cards_title
+    largeText.textContent = cardData.name;
     // openModal with previewImageModal
     openModal(previewModal);
   });

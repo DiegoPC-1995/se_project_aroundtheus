@@ -39,6 +39,20 @@
   position: relative;
 }
 
+.large-text {
+  color: #ffffff;
+  width: 291px;
+  height: 12px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .modal__close {
   border: none;
   width: 40px;
