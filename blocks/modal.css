@@ -28,13 +28,13 @@
 
 .preview__container {
   margin: 90px auto;
-  width: auto;
+  max-width: 66.613%;
   max-height: 540px;
   position: relative;
 }
 
 .large-image {
-  width: auto;
+  max-width: 100%;
   max-height: 540px;
   position: relative;
 }
