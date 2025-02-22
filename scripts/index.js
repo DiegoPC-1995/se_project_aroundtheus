@@ -36,6 +36,8 @@ const addCardFormElement = addCardModal.querySelector(".modal__form");
 // Buttons and other  DOM nodes
 const profileEditButton = document.querySelector("#profile-edit-button");
 const addCardModalCloseButton = addCardModal.querySelector(".modal__close");
+// find the button to close previewImageModal
+const previewCloseButton = document.querySelector("#preview-close-button");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
 const profileTitleInput = document.querySelector("#profile-title-input");
@@ -93,16 +95,6 @@ function getCardElement(cardData) {
     // openModal with previewImageModal
     openModal(previewModal);
   });
-
-  // define a function in order to close previewImageModal
-  function closePreview() {
-    closeModal(previewModal);
-  }
-  // find the button to close previewImageModal
-  const previewCloseButton = document.querySelector("#preview-close-button");
-  // add click event listener to close previewImageModal
-  previewCloseButton.addEventListener("click", closePreview);
-
   cardImageEl.src = cardData.link;
   cardImageEl.setAttribute("alt", cardData.name);
   cardTitleEl.textContent = cardData.name;
@@ -135,6 +127,7 @@ function handleAddCardSubmit(evt) {
   const name = cardTitleInput.value;
   const link = cardUrlInput.value;
   renderCard({ name, link }, cardListEl);
+  evt.target.reset();
   closeModal(addCardModal);
 }
 
@@ -162,3 +155,6 @@ addNewCardButton.addEventListener("click", () => openModal(addCardModal));
 addCardModalCloseButton.addEventListener("click", () =>
   closeModal(addCardModal)
 );
+
+// add click event listener to close previewImageModal, with the function to closeModal inside, so as to not create memory leaks in a visitor's browser
+previewCloseButton.addEventListener("click", () => closeModal(previewModal));
