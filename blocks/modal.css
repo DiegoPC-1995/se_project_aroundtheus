@@ -1,3 +1,20 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -14,6 +31,8 @@
 
 .modal_open {
   display: flex;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 .modal__container {
@@ -154,6 +173,19 @@
     padding: 0;
     width: 95%;
     height: 50px;
+  }
+
+  .preview__container {
+    margin: 90px auto;
+    max-width: 75%;
+    max-height: 540px;
+    position: relative;
+  }
+
+  .large-image {
+    max-width: 100%;
+    max-height: 540px;
+    position: relative;
   }
 }
 
