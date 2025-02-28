@@ -133,7 +133,8 @@
   height: 50.15px;
   border: none;
   border-radius: 2px;
-  background-image: url(../images/Submit-Button.svg);
+  /* background-image: url(../images/Submit-Button.svg); */
+  color: #000;
 }
 
 .modal__button:hover {
