@@ -1,1 +1,1 @@
-console.log("hello from validation.js");
+console.log("hello from validation");
